@@ -169,7 +169,7 @@ variable "tags" {
 
 # DB subnet group
 variable "subnet_ids" {
-  type        = "list"
+  type        = list(string)
   description = "A list of VPC subnet IDs"
   default     = []
 }
